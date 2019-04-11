@@ -1,6 +1,6 @@
-require "rails-helper"
+require "rails_helper"
 
-RSpec.features "Creating Exercise" do
+RSpec.feature "Creating Exercise" do
   before do
     @john = User.create!(email: "john@example.com", password: "password")
     login_as(@john)
