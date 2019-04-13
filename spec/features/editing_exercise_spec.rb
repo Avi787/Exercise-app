@@ -14,7 +14,7 @@ RSpec.feature "Editing Exercise" do
   scenario "with valid data succeeds" do
     visit '/'
     
-    click_link "My Lounge"
+    click_link "My lounge"
     
     path = "/users/#{@owner.id}/exercises/#{@owner_exercise.id}/edit"
     link = "a[href=\'#{path}\']"
