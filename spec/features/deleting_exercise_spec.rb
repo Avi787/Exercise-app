@@ -14,7 +14,7 @@ RSpec.feature "Deleting Exercise" do
   scenario do
     visit "/"
     
-    click_link "My Lounge"
+    click_link "My lounge"
     
     path = "/users/#{@owner.id}/exercises/#{@owner_exercise.id}"
     link = "//a[contains(@href,\'#{path}\') and .//text()='Destroy']"
